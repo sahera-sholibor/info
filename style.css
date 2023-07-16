@@ -1,0 +1,139 @@
+    /**************************** Reset ************************** */
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    /**************************** General Style *****************************/
+    :root{
+        font-size: 10px;
+        /**************************** Colors *****************************/
+        --color-primary:#9c27b0;
+        --color-primary-m:rgba(156, 48, 169,.8);
+    
+        --color-secondary:#f4f5f8;
+        --color-secondary-m:#fff;
+    
+        --color-tertiary:#282830;
+        --color-tertiary-m:#484848;
+        --color-tertiary-m-l:#e6e6e6;
+        --color-tertiary-m-d:#24242b;
+        /***************************** Pading *****************************/
+        --pading-xl-h:calc(3rem + 6vw);
+        --pading-xl-v:calc(3rem + 6vh);
+    
+        --pading-l-h:calc(3rem + 3vw);
+        --pading-l-v:calc(3rem + 3vh);
+    
+        --pading-m-h:calc(2rem + 2vw);
+        --pading-m-v:calc(2rem + 2vh);
+    
+        --pading-s-h:calc:(1rem + 2vw);
+        --pading-s-v:calc:(1rem + 2vh);
+    
+        --pading-xs-h:calc(.5rem + 1vw);
+        --pading-xs-v:calc(.5rem + 1vh);
+        /***************************** Font Size **************************/
+        /* Dynamic */
+        --font-size-d-xl:calc(3rem + 3vw);
+        --font-size-d-l:calc(2rem + 2vw);
+        --font-size-d-m:calc(1rem + 2vw);
+        --font-size-d-s:calc(1rem + 1vw);
+        /* Static */
+        --font-size-st-l:3rem;
+        --font-size-st-m:2rem;
+        --font-size-st-s:1.5rem;
+        --font-size-st-xs:1rem;
+       
+        /***************************** Font Family ************************/
+        --font-family-main:'Montserrat';
+        --font-family-sub:'Varta';
+}
+body{
+    font-family: var(--font-family-sub);
+    line-height: 1.5;
+    /* background-color: var(--color-primary);  */
+}
+a{
+    text-decoration: none;
+    color: var(--color-tertiary-m-l);
+}
+li{
+    list-style:one;
+}
+/* -------------------------------------------- layout */
+#main-contaier{
+    display: grid;
+    grid-template-columns:[main-start] repeat(8,minmax(min-content,18.75rem))[main-end];
+    grid-template-rows: repeat(11,min-cotet);
+    background-color: var(--color-primary);
+    justify-content: center;
+}
+/* -------------------------------------------- header */
+.header{
+    height: 300px;
+    background-color: var(--color-tertiary-m);
+    grid-column: main-start/main-end;
+}
+/* -------------------------------------------- about */
+.about{
+    height: 300px;
+    background-color: var(--color-tertiary-m-l);
+    grid-column: main-start/main-end;
+}
+/* -------------------------------------------- akills */
+.skills{
+    height: 300px;
+    background-color: var(--color-secondary-m);
+    grid-column: main-start/main-end;
+}
+/* -------------------------------------------- resume */
+.resume{
+    height: 300px;
+    background-color: var(--color-tertiary);
+    grid-column: main-start/main-end;
+}
+/* -------------------------------------------- prize */
+.prize{
+    height: 300px;
+    background-color: var(--color-primary);
+    grid-column: main-start/main-end;
+}
+/* -------------------------------------------- services */
+.services{
+    height: 300px;
+    background-color: var(--color-tertiary);
+    grid-column: main-start/main-end;
+}
+/* -------------------------------------------- portfolio */
+.portfolio{
+    height: 300px;
+    background-color: var(--color-tertiary-m-l);
+    grid-column: main-start/main-end;
+}
+/* -------------------------------------------- customers */
+.customers{
+    height: 300px;
+    background-color: var(--color-primary);
+    grid-column: main-start/main-end;
+}
+/* -------------------------------------------- blog */
+.blog{
+    height: 300px;
+    background-color: var(--color-tertiary-m-d);
+    grid-column: main-start/main-end;
+}
+/* -------------------------------------------- contact */
+.contact{
+    height: 300px;
+    background-color: var(--color-secondary);
+    grid-column: main-start/main-end;
+}
+/* -------------------------------------------- footer */
+.footer{
+    height: 300px;
+    background-color: var(--color-tertiary-m);
+    grid-column: main-start/main-end;
+}
